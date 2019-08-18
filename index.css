@@ -65,14 +65,25 @@ span {
 /* About Box */
 /* Three in line*/
 
+.fiveBoxes {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .threeBoxes {
   position: relative;
-  display: inline-block;
-  width: 30%;
-  margin-left: 1%;
-  margin-right: 1%;
+  display: block;
+  /* width: 360px;
+  height: 180px; */
   background-color: #f2f2f2;
   padding-bottom: 40px;
+  width: 360px;
+}
+.threeBoxes img {
+  max-width: 100%;
+  height: auto;
+  border: none;
 }
 
 .h4inThreeBoxes {
@@ -130,10 +141,6 @@ span {
   margin-left: 30%;
 }
 
-.fiveBoxes {
-  margin-top: 5%;
-}
-
 /*Two in Line*/
 
 .twoBoxes {
@@ -185,40 +192,52 @@ span {
 .allTextTogetherInSecondBackground {
   position: absolute;
   text-align: center;
-  width: 100vw;
+  width: 50%;
   font-size: 15px;
   color: white;
   text-shadow: 2px 2px gray;
   left: 50%;
-  top: 250%;
+  top: 500%;
   transform: translate(-50%, -50%);
 }
 
-/*Columns*/
-
-.oneMainColumn {
-  width: 100%;
+.allTextTogetherInSecondBackground h1 {
+  font: 36px;
 }
 
+.allTextTogetherInSecondBackground p {
+  font: 18px;
+}
+
+/*Columns*/
+/*Four Columns*/
+
 .fourColumns {
-  width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .allFourColums {
-  position: relative;
-  display: inline-grid;
-  width: 23%;
-  height: 500px;
-  margin-right: 10px;
-  margin-left: 10px;
+  display: block;
+  width: 260px;
+  height: 520px;
   background-color: #f2f2f2;
-  padding-bottom: 40px;
+}
+
+.allFourColums img {
+  width: 100%;
 }
 
 .allFourColums h4 {
   text-align: center;
   font-size: 20px;
+  color: #666666;
+}
+
+.allFourColums p {
+  text-align: left;
+  padding: 10px 20px;
   color: #666666;
 }
 
@@ -238,16 +257,7 @@ span {
   text-align: center;
   margin-left: 25%;
 }
-
-.allFourColums p {
-  text-align: left;
-  padding: 10px 20px;
-  color: #666666;
-}
-
-.img {
-  width: 100%;
-}
+/*One Big Column*/
 
 .oneSingleColumn {
   width: 100%;
@@ -263,17 +273,20 @@ span {
   font-size: 20px;
   font-weight: 700;
   color: #666666;
-  padding: 10px 20px;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
 .oneSingleColumn p {
-  padding: 10px 20px;
+  padding-left: 30px;
+  color: #666666;
+  display: block;
 }
 
 .oneSingleColumn a {
   padding: 10px 20px;
   background-color: white;
-  width: 30%;
+  width: 8%;
   border-radius: 10px;
   font-size: 18px;
   text-decoration: none;
@@ -284,12 +297,66 @@ span {
   border: 1px solid #cdcdcd;
   display: inline-block;
   text-align: center;
-  margin-left: 10px 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 /*Contact Form*/
 
 /*Use It Free*/
 
 .useItFree {
-  align-content: center;
+  text-align: center;
+  margin: 35px 0 25px;
+}
+
+.useItFree h1 {
+  font-size: 32px;
+  color: #666;
+  font-style: italic;
+}
+
+.useItFree p {
+  color: #999;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+hr {
+  color: 1px solid #eee;
+}
+
+/*Form*/
+
+.formAllElements {
+  text-align: center;
+  /* background: rgba(242, 242, 242, 0.4); */
+}
+
+.formAllElements h1 {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.formParagrapf {
+  background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+  border-radius: 5px;
+  width: 50%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+}
+
+.bgImage {
+  margin-left: 0;
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
