@@ -197,7 +197,7 @@ span {
   color: white;
   text-shadow: 2px 2px gray;
   left: 50%;
-  top: 500%;
+  top: 260%;
   transform: translate(-50%, -50%);
 }
 
@@ -300,7 +300,6 @@ span {
   margin-left: 30px;
   margin-bottom: 20px;
 }
-/*Contact Form*/
 
 /*Use It Free*/
 
@@ -329,7 +328,26 @@ hr {
 
 .formAllElements {
   text-align: center;
-  /* background: rgba(242, 242, 242, 0.4); */
+}
+
+.threeFieldsAndTextarea {
+  width: 40%;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgba(242, 242, 242, 0.4);
+}
+
+.threeInputFields {
+  display: inline-block;
+  flex-flow: column;
+  width: 45%;
+}
+
+.textarea {
+  width: 45%;
+  display: inline-block;
+  flex-flow: column;
 }
 
 .formAllElements h1 {
@@ -338,13 +356,15 @@ hr {
 }
 
 .formParagrapf {
-  background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
-  border-radius: 5px;
-  width: 50%;
+  background-color: rgba(242, 242, 242, 0.4);
   color: #000;
   font-size: 16px;
   margin-bottom: 20px;
   padding: 20px 15px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  width: 40%;
 }
 
 .bgImage {
