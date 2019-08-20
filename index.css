@@ -3,15 +3,7 @@
   src: url(glyphicons-halflings-regular.woff2);
 }
 
-/* medium devices */
-
-@media (max-width: 992px) {
-}
-
-/*small devices*/
-
-@media only screen and (max-width: 768px) {
-}
+/*Desktop version*/
 
 body {
   margin: 0;
@@ -25,11 +17,14 @@ body {
 /* heder */
 
 header {
+  position: fixed;
   display: block;
   text-align: center;
   background-color: #383e4c;
   border-color: #383e4c;
   color: white;
+  top: 0;
+  width: 100%;
 }
 
 span {
@@ -48,13 +43,13 @@ span {
 
 .homepageDiv {
   text-align: center;
-  border: 1px solid black;
+
   height: 500px;
 }
 
 .homepageConquerLetters {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
@@ -197,7 +192,7 @@ span {
   color: white;
   text-shadow: 2px 2px gray;
   left: 50%;
-  top: 260%;
+  top: 240%;
   transform: translate(-50%, -50%);
 }
 
@@ -326,6 +321,12 @@ hr {
 
 /*Form*/
 
+.allFormElementsAboveImg {
+  position: absolute;
+  left: 10%;
+  top: 490%;
+}
+
 .formAllElements {
   text-align: center;
 }
@@ -333,42 +334,95 @@ hr {
 .threeFieldsAndTextarea {
   width: 40%;
   text-align: center;
+  border-radius: 10px;
+  margin-left: 26%;
+  margin-left: 375px;
+}
+
+/*Three fields left*/
+.threeInputFields {
+  width: 38%;
   display: inline-block;
+  flex-flow: column;
+  border-radius: 10px;
+  height: 150px;
+}
+
+/*One Field right*/
+
+.input {
+  border-radius: 5px;
+  background-color: rgba(242, 242, 242, 0.4);
+  display: block;
+  border: none;
+  background: rgba(242, 242, 242, 0.4);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -78px;
+  padding: 10px;
+  width: 280px;
+}
+
+.textareaDiv {
   border-radius: 10px;
   background-color: rgba(242, 242, 242, 0.4);
+  display: inline-block;
+  border: none;
+  float: right;
+  padding: 10px 10px;
+  border-radius: 5px;
+  height: 130px;
+  margin-top: 18px;
+  width: 280px;
 }
 
-.threeInputFields {
-  display: inline-block;
-  flex-flow: column;
-  width: 45%;
-}
-
-.textarea {
-  width: 45%;
-  display: inline-block;
-  flex-flow: column;
+textarea {
+  border-width: 0;
+  height: 100%;
+  background-color: transparent;
+  color: initial;
+  margin-left: 20px;
 }
 
 .formAllElements h1 {
   color: white;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px gray;
+  position: relative;
+  top: 260%;
 }
 
 .formParagrapf {
   background-color: rgba(242, 242, 242, 0.4);
   color: #000;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
-  padding: 20px 15px;
+  padding: 30px 20px;
   text-align: center;
   display: inline-block;
-  border-radius: 10px;
-  width: 40%;
+  border-radius: 5px;
+  width: 50%;
 }
 
 .bgImage {
   margin-left: 0;
+}
+
+.blackButton {
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 20px;
+  background-color: black;
+}
+
+/*Use It Free*/
+
+.useItFree {
+  text-align: center;
+  margin-left: 35%;
+  width: 27%;
 }
 
 /*Footer*/
@@ -379,4 +433,104 @@ footer {
   font-size: 12px;
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+/* medium devices */
+
+@media (max-width: 992px) {
+  .fiveBoxes {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .threeBoxes {
+    display: inline;
+  }
+
+  .greenButton {
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 10%;
+    background-color: #178a27;
+  }
+
+  .blueButton {
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 20%;
+    background-color: #1686c1;
+  }
+
+  .redButton {
+    background-color: #852406;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    color: white;
+    margin-left: 30%;
+  }
+  /*Columns*/
+  /*Four Columns*/
+
+  .fourColumns {
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .allFourColums {
+    display: block;
+    width: 260px;
+    height: 520px;
+    background-color: #f2f2f2;
+  }
+
+  .allFourColums img {
+    width: 100%;
+  }
+
+  .allFourColums h4 {
+    text-align: center;
+    font-size: 20px;
+    color: #666666;
+  }
+
+  .allFourColums p {
+    text-align: left;
+    padding: 10px 20px;
+    color: #666666;
+  }
+
+  .allFourColums a {
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    color: #666666;
+    margin: 5px 0 0;
+    border: 1px solid gray;
+    border: 1px solid #cdcdcd;
+    display: inline-block;
+    text-align: center;
+    margin-left: 25%;
+  }
+}
+
+/*small devices*/
+
+@media only screen and (max-width: 768px) {
 }

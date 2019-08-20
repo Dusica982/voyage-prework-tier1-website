@@ -6,6 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
     <link rel="stylesheet" href="index.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .parallax {
+        /* Image used */
+        background-image: url("./img/bg-1.jpg");
+        background-image: url("./img/bg-2.jpg");
+        background-image: url("./img/bg-3.jpg");
+
+        /* Specific height */
+        min-height: 520px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+
     <script type="text/javascript" src="main.js"></script>
     <title>Tier1</title>
   </head>
@@ -19,11 +38,11 @@
       <span>External</span>
     </header>
 
-    <!-- First Box -->
+    <!-- Conquer -->
     <div class="homepageDiv">
-      <img src="./img/bg-1.jpg" alt="firstBackgroundImage" height="100%" width="100%" />
+      <div class=" parallax"></div>
 
-      <div class="homepageConquerLetters">
+      <div class="homepageConquerLetters" height:1000px;background-color:red;font-size:36px>
         <h1>CONQUER</h1>
         <h3>Simple Bootstrap Template</h3>
       </div>
@@ -107,7 +126,8 @@
     <!-- Our Services -->
 
     <div class="ourService">
-      <img src="./img/bg-2.jpg" alt="mountainBackgroundImage" height="100%" width="100%" />
+      <div class=" parallax"></div>
+
       <div class="allTextTogetherInSecondBackground">
         <h1>Our Services</h1>
         <p>
@@ -180,25 +200,28 @@
     <!-- Form -->
 
     <div>
-      <img class="allTogether bgImage" src="./img/bg-3.jpg" alt="mountainBackgroundImage" height="100%" width="100%" />
+      <div class=" parallax"></div>
       <div class="formAllElements">
-        <h1>Contact Form</h1>
-        <p class="formParagrapf">
-          Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod
-          libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.
-        </p>
-        <form>
-          <div class="threeFieldsAndTextarea">
+        <div class="allFormElementsAboveImg">
+          <h1>Contact Form</h1>
+          <p class="formParagrapf">
+            Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In
+            euismod libero at magna dapibus, in rutrum velit lacinia.
+            <br />
+            Etiam a mi quis arcu varius condimentum.
+          </p>
+          <form class="threeFieldsAndTextarea">
             <div class="threeInputFields">
-              <input type="text" name="name" value="Name" />
-              <input type="text" name="email" value="Email" />
-              <input type="text" name="subject" value="Subject" />
+              <input class="input" type="text" name="name" value="Name" />
+              <input class="input" type="text" name="email" value="Email" />
+              <input class="input" type="text" name="subject" value="Subject" />
             </div>
-            <div class="textarea">
-              <textarea rows="4" cols="50">Your message here...</textarea>
+            <div class="textareaDiv">
+              <textarea type="text" placeholder="Your message here..."></textarea>
+              <a href="#" class="blackButton">Send</a>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
 
