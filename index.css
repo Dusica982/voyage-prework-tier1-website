@@ -25,9 +25,10 @@ header {
   color: white;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
-span {
+.span {
   display: inline-block;
   border: 1px solid rgb(102, 100, 100);
   margin: 1%;
@@ -37,6 +38,7 @@ span {
   padding-bottom: 1%;
   color: white;
   font-family: Gryphicons-Halflings-Regular;
+  text-decoration: none;
 }
 
 /*Conquer*/
@@ -296,6 +298,95 @@ span {
   margin-bottom: 20px;
 }
 
+/*Form*/
+
+.allFormElementsAboveImg {
+  position: absolute;
+  text-align: center;
+  margin-left: 10%;
+  top: 490%;
+}
+
+.mainDivForthreeFieldsAndTextarea {
+  border-radius: 10px;
+  margin-left: 23%;
+  margin-right: 23%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divForSingleParagraph h1 {
+  color: white;
+  text-shadow: 2px 2px gray;
+  position: relative;
+  top: 260%;
+}
+
+.formParagrapf {
+  background-color: rgba(242, 242, 242, 0.4);
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  width: 51%;
+}
+
+.bgImage {
+  margin-left: 0;
+}
+
+.input {
+  border-radius: 5px;
+  background-color: rgba(242, 242, 242, 0.4);
+  flex-flow: row;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/*Three fields left*/
+.threeInputFields {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 46%;
+  flex-flow: column;
+  border-radius: 10px;
+  height: 150px;
+}
+
+/*One Field right*/
+
+.oneInputField {
+  border-radius: 5px;
+  background-color: rgba(242, 242, 242, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 46%;
+  height: 130px;
+}
+
+textarea {
+  border-width: 0;
+  height: 140%;
+  background-color: transparent;
+}
+
+.blackButton {
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: white;
+  margin-top: 20px;
+  background-color: black;
+}
+
 /*Use It Free*/
 
 .useItFree {
@@ -317,112 +408,6 @@ span {
 
 hr {
   color: 1px solid #eee;
-}
-
-/*Form*/
-
-.allFormElementsAboveImg {
-  position: absolute;
-  left: 10%;
-  top: 490%;
-}
-
-.formAllElements {
-  text-align: center;
-}
-
-.threeFieldsAndTextarea {
-  width: 40%;
-  text-align: center;
-  border-radius: 10px;
-  margin-left: 26%;
-  margin-left: 375px;
-}
-
-/*Three fields left*/
-.threeInputFields {
-  width: 38%;
-  display: inline-block;
-  flex-flow: column;
-  border-radius: 10px;
-  height: 150px;
-}
-
-/*One Field right*/
-
-.input {
-  border-radius: 5px;
-  background-color: rgba(242, 242, 242, 0.4);
-  display: block;
-  border: none;
-  background: rgba(242, 242, 242, 0.4);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: -78px;
-  padding: 10px;
-  width: 280px;
-}
-
-.textareaDiv {
-  border-radius: 10px;
-  background-color: rgba(242, 242, 242, 0.4);
-  display: inline-block;
-  border: none;
-  float: right;
-  padding: 10px 10px;
-  border-radius: 5px;
-  height: 130px;
-  margin-top: 18px;
-  width: 280px;
-}
-
-textarea {
-  border-width: 0;
-  height: 100%;
-  background-color: transparent;
-  color: initial;
-  margin-left: 20px;
-}
-
-.formAllElements h1 {
-  color: white;
-  text-shadow: 2px 2px gray;
-  position: relative;
-  top: 260%;
-}
-
-.formParagrapf {
-  background-color: rgba(242, 242, 242, 0.4);
-  color: #000;
-  font-size: 20px;
-  margin-bottom: 20px;
-  padding: 30px 20px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 5px;
-  width: 50%;
-}
-
-.bgImage {
-  margin-left: 0;
-}
-
-.blackButton {
-  border-radius: 5px;
-  font-size: 18px;
-  text-decoration: none;
-  padding: 10px 30px;
-  color: white;
-  margin-top: 20px;
-  background-color: black;
-}
-
-/*Use It Free*/
-
-.useItFree {
-  text-align: center;
-  margin-left: 35%;
-  width: 27%;
 }
 
 /*Footer*/
@@ -449,84 +434,32 @@ footer {
   }
 
   .greenButton {
-    border-radius: 5px;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 30px;
-    text-transform: capitalize;
-    color: white;
     margin-left: 10%;
-    background-color: #178a27;
   }
 
   .blueButton {
-    border-radius: 5px;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 30px;
-    text-transform: capitalize;
-    color: white;
-    margin-left: 20%;
-    background-color: #1686c1;
+    margin-left: 10%;
   }
 
   .redButton {
-    background-color: #852406;
-    border-radius: 5px;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 30px;
-    text-transform: capitalize;
-    color: white;
-    margin-left: 30%;
+    margin-left: 10%;
   }
+
+  /*Read More Button*/
+  .readMoreButton {
+    margin-left: 25%;
+  }
+
   /*Columns*/
   /*Four Columns*/
 
   .fourColumns {
-    margin-bottom: 3%;
-    display: flex;
-    justify-content: space-between;
   }
 
   .allFourColums {
     display: block;
-    width: 260px;
-    height: 520px;
-    background-color: #f2f2f2;
-  }
-
-  .allFourColums img {
-    width: 100%;
-  }
-
-  .allFourColums h4 {
-    text-align: center;
-    font-size: 20px;
-    color: #666666;
-  }
-
-  .allFourColums p {
-    text-align: left;
-    padding: 10px 20px;
-    color: #666666;
-  }
-
-  .allFourColums a {
-    background-color: white;
-    width: 30%;
-    border-radius: 10px;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 30px;
-    text-transform: capitalize;
-    color: #666666;
-    margin: 5px 0 0;
-    border: 1px solid gray;
-    border: 1px solid #cdcdcd;
-    display: inline-block;
-    text-align: center;
-    margin-left: 25%;
+    width: 50%;
+    height: 100%;
   }
 }
 
