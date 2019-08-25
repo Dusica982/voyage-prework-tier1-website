@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
     <link rel="stylesheet" href="index.css" type="text/css" />
+    <script src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       .parallax {
@@ -31,16 +32,22 @@
   <body>
     <!-- header -->
     <header>
-      <a href="#" class="span">Homepage</a>
-      <a href="#" class="span"> About Us </a>
-      <a href="#" class="span">Service</a>
-      <a href="#" class="span">Contact </a>
-      <a href="#" class="span">External</a>
+      <a id="homepage-button" href="#homepage" class="span">Homepage</a>
+      <a id="aboutus-button" href="#aboutus" class="span"> About Us </a>
+      <a id="service-button" href="#service" class="span">Service</a>
+      <a id="contact-button" href="#contact" class="span">Contact </a>
+      <a id="external-button" href="#external" class="span">External</a>
     </header>
 
     <!-- Conquer -->
-    <div class="homepageDiv">
-      <div class=" parallax"></div>
+    <div id="homepage" class="homepageDiv">
+      <script>
+        function scrollWin() {
+          window.scrollBy(100, 100);
+        }
+      </script>
+
+      <div class="parallax"></div>
 
       <div class="homepageConquerLetters" height:1000px;background-color:red;font-size:36px>
         <h1>CONQUER</h1>
@@ -48,7 +55,7 @@
       </div>
     </div>
 
-    <div class="allTogether">
+    <div id="aboutus" class="allTogether">
       <!-- About Box -->
 
       <div class="aboutUsDiv">
@@ -125,7 +132,7 @@
     </div>
     <!-- Our Services -->
 
-    <div class="ourService">
+    <div id="service" class="ourService">
       <div class=" parallax"></div>
 
       <div class="allTextTogetherInSecondBackground">
@@ -199,7 +206,7 @@
 
     <!-- Form -->
 
-    <div>
+    <div id="contact">
       <div class=" parallax"></div>
 
       <div class="allFormElementsAboveImg">
@@ -230,7 +237,11 @@
     <!-- Use it free -->
     <div class="useItFree">
       <h1>Use it free!</h1>
-      <p>“Conquer is free Bootstrap template from templatemo website. No backlink is required to use this layout.”</p>
+      <p>
+        “Conquer is free Bootstrap template from templatemo website.
+        <br />
+        No backlink is required to use this layout.”
+      </p>
     </div>
     <hr />
 
