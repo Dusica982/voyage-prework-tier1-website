@@ -3,7 +3,7 @@ function Scroll(id) {
   if (!idButton) {
     return;
   }
-  idButton.scrollIntoView();
+  idButton.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
 // service-button
@@ -16,7 +16,7 @@ window.onload = function() {
   });
   document.getElementById("aboutUs-button").addEventListener("click", event => {
     event.preventDefault();
-    // idButton.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+
     Scroll("aboutUs");
   });
   document.getElementById("service-button").addEventListener("click", event => {
