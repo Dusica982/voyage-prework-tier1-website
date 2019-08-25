@@ -14,10 +14,10 @@ window.onload = function() {
     event.preventDefault();
     Scroll("homepage");
   });
-  document.getElementById("aboutus-button").addEventListener("click", event => {
+  document.getElementById("aboutUs-button").addEventListener("click", event => {
     event.preventDefault();
     // idButton.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-    Scroll("aboutus");
+    Scroll("aboutUs");
   });
   document.getElementById("service-button").addEventListener("click", event => {
     event.preventDefault();
@@ -32,3 +32,12 @@ window.onload = function() {
     Scroll("service");
   });
 };
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

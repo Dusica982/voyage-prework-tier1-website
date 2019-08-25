@@ -10,11 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       .parallax {
-        /* Image used */
-        background-image: url("./img/bg-1.jpg");
-        background-image: url("./img/bg-2.jpg");
-        background-image: url("./img/bg-3.jpg");
-
         /* Specific height */
         min-height: 520px;
 
@@ -23,6 +18,17 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+      }
+
+      .parallax1 {
+        background-image: url("./img/bg-1.jpg");
+      }
+      .parallax2 {
+        background-image: url("./img/bg-2.jpg");
+      }
+
+      .parallax3 {
+        background-image: url("./img/bg-3.jpg");
       }
     </style>
 
@@ -33,11 +39,23 @@
     <!-- header -->
     <header>
       <a id="homepage-button" href="#homepage" class="span">Homepage</a>
-      <a id="aboutus-button" href="#aboutus" class="span"> About Us </a>
+      <a id="aboutUs-button" href="#aboutus" class="span"> About Us </a>
       <a id="service-button" href="#service" class="span">Service</a>
       <a id="contact-button" href="#contact" class="span">Contact </a>
       <a id="external-button" href="#external" class="span">External</a>
     </header>
+
+    <div class="topnav">
+      <a class="active"></a>
+      <div id="myLinks">
+        <a href="#homepage">Homepage</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+        <a href="#external">External</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> </a>
+    </div>
 
     <!-- Conquer -->
     <div id="homepage" class="homepageDiv">
@@ -47,11 +65,11 @@
         }
       </script>
 
-      <div class="parallax"></div>
+      <div class="parallax parallax1"></div>
 
       <div class="homepageConquerLetters" height:1000px;background-color:red;font-size:36px>
         <h1>CONQUER</h1>
-        <h3>Simple Bootstrap Template</h3>
+        <h4>Simple Bootstrap Template</h4>
       </div>
     </div>
 
@@ -133,7 +151,7 @@
     <!-- Our Services -->
 
     <div id="service" class="ourService">
-      <div class=" parallax"></div>
+      <div class=" parallax parallax2"></div>
 
       <div class="allTextTogetherInSecondBackground">
         <h1>Our Services</h1>
@@ -207,7 +225,7 @@
     <!-- Form -->
 
     <div id="contact">
-      <div class=" parallax"></div>
+      <div class=" parallax parallax3"></div>
 
       <div class="allFormElementsAboveImg">
         <div class="divForSingleParagraph">
