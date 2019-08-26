@@ -240,6 +240,7 @@ header {
   margin-bottom: 3%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .allFourColums {
@@ -551,6 +552,17 @@ footer {
   .blackButton {
     margin-left: -27%;
   }
+
+  /*Use it free*/
+
+  .useItFree h1 {
+    font-weight: normal;
+  }
+
+  .useItFree p {
+    width: 45%;
+    margin-left: 30%;
+  }
 }
 
 /*--------------------------------------------------------------*/
@@ -596,119 +608,95 @@ footer {
     margin-bottom: 15%;
   }
 
+  /*Five boxes*/
+
+  .aboutUsDiv {
+    margin-left: 5%;
+  }
   .fiveBoxes {
-    display: block;
+    margin-top: 15%;
+    display: flex;
     justify-content: space-between;
-    height: 100%;
-    background-color: #f2f2f2;
+  }
+
+  .threeBoxes {
+    display: inline;
+    justify-content: space-between;
+    width: 30%;
+    height: 450px;
   }
 
   .threeBoxes img {
     max-width: 100%;
-    height: 100%;
-  }
-
-  .h4inThreeBoxes {
-    text-align: center;
-  }
-
-  .pinThreeBoxes {
-    text-align: center;
+    height: 125px;
+    display: inline-block;
   }
 
   .greenButton {
-    display: inline-block;
-    margin-left: 110px;
-    margin-bottom: 20px;
+    margin-left: 15%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   .blueButton {
-    display: inline-block;
-    margin-left: 110px;
-    margin-bottom: 20px;
+    margin-left: 20%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   .redButton {
-    display: inline-block;
-    margin-left: 110px;
-    margin-bottom: 20px;
+    margin-left: 15%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
-  /*Two boxes*/
-
-  .twoBoxes {
-    display: block;
-    width: 100%;
-  }
+  /*Two Boxes*/
 
   .readMoreButton {
-    margin-left: 30%;
-  }
-
-  .rightBox {
+    margin-left: 24%;
   }
 
   /* Our Services */
 
+  .ourService {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+
   .allTextTogetherInSecondBackground {
-    top: 380%;
+    top: 330%;
+    width: 80%;
   }
 
   /*Four Columns*/
 
   .allFourColums {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
+    width: 50%;
+    width: 41%;
+    height: 550px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 25px;
   }
 
-  .allFourColums img {
-    width: 100%;
-  }
-
-  .allFourColums a {
-    margin-bottom: 20px;
-  }
-
-  /*One Big Column*/
-
-  .oneSingleColumn {
-    margin-top: 10%;
-  }
+  /*oneSingleColumn*/
 
   .oneSingleColumn a {
-    width: 40%;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 10px 20px;
+    font-size: 9px;
   }
 
   /*Form*/
 
   .allFormElementsAboveImg {
-    top: 830%;
-    margin-left: -40%;
-  }
-
-  .mainDivForthreeFieldsAndTextarea {
-    flex-direction: column;
-  }
-
-  /*Three fields left*/
-  .threeInputFields {
-    width: 100%;
-  }
-
-  /*One Field right*/
-
-  .oneInputField {
+    top: 650%;
+    margin-left: 5%;
     width: 100%;
   }
 
   .blackButton {
-    top: 100%;
     position: absolute;
+    margin-left: -33%;
   }
 }
 
