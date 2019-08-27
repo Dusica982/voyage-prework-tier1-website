@@ -745,11 +745,6 @@ footer {
     border-radius: 5px;
   }
 
-  /* .topNav a:hover {
-    background-color: #ddd;
-    color: black;
-  } */
-
   .active {
     color: white;
   }
@@ -771,7 +766,7 @@ footer {
   /*Five Boxes*/
 
   .fiveBoxes {
-    margin-top: -280px;
+    margin-top: -80px;
     margin-left: 17%;
     display: flex;
     flex-direction: column;
