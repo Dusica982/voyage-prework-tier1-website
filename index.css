@@ -705,7 +705,7 @@ footer {
 
   .parallax3 {
     background-image: url("./img/bg-3.jpg");
-    min-height: 600px;
+    min-height: 710px;
   }
 
   header {
@@ -850,11 +850,40 @@ footer {
   /*Form*/
 
   .allFormElementsAboveImg {
-    top: 1430%;
+    top: 1460%;
   }
 
+  .mainDivForthreeFieldsAndTextarea {
+    border-radius: 10px;
+    margin-left: 4%;
+    margin-right: -3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formParagrapf {
+    width: 95%;
+  }
+
+  .input {
+    width: 106%;
+  }
+
+  /*Three fields left*/
+  .threeInputFields {
+    width: 100%;
+    padding-bottom: 4%;
+  }
+
+  /*One Field right*/
+
+  .oneInputField {
+    width: 106%;
+    margin-left: -4%;
+  }
   .blackButton {
     position: absolute;
-    margin-left: -33%;
+    margin-left: -111%;
+    border: 1px solid wheat;
   }
 }
